@@ -1,4 +1,8 @@
-relativeRedirect
+Redirector
 ================
 
-Chrome extension, redirects relative paths.
+Chrome extension, redirects paths based on regular expression identifier.
+
+# TODO:
+
+Support for multiple redirect rules
