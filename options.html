@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head><title>Redirector settings</title></head>
+<link type="text/css" href="style.css" rel="stylesheet">
+<body>
+<div class="pure-g">
+
+<div class="pure-u-1-2 l-box">
+<h1>Redirector :: Settings</h1>
+<p>Useful in development if you have paths on your website, that you need to temporarily redirect</p>
+
+<form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="app_url">Original url</label>
+            <input id="app_url" class="pure-input-2-3" type="text" placeholder="http://dev.example.com">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="my_url">The domain to change to</label>
+            <input id="my_url" class="pure-input-2-3" type="text" placeholder="http://www.example.com">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="identifier">Regular expression to filter request on</label>
+            <input id="identifier" class="pure-input-2-3" type="text" placeholder="*://dev.example.com/*/article/*">
+        </div>
+
+        <div class="pure-controls">
+            <button type="submit" id="save" class="pure-button pure-button-primary">Save</button>
+        </div>
+    </fieldset>
+</form>
+
+<h3>Value examples</h3>
+<table class="pure-table">
+    <thead>
+        <tr>
+            <th>Input</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="pure-table-odd">
+            <td>Url to change</td>
+            <td>https://dev.example.com</td>
+        </tr>
+
+        <tr>
+            <td>Replacement url</td>
+            <td>http://www.example.com</td>
+        </tr>
+
+        <tr class="pure-table-odd">
+            <td>Regex</td>
+            <td>*://dev.example.com/*/article/*</td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="status"></div>
+<p class="legal-notice">&copy; Valur Hrafn - github.com/valurhrafn</p>
+</div>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html
